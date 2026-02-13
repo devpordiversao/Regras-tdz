@@ -255,6 +255,40 @@
             margin-top: 30px;
         }
 
+        .rules-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .rules-header h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+
+        .rules-warning {
+            font-size: 1.1em;
+            opacity: 0.9;
+            color: #ffcccc;
+        }
+
+        .rules-footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            font-size: 1.1em;
+            color: #ffcccc;
+        }
+
         .rule-card {
             background: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(15px);
@@ -264,6 +298,24 @@
             transition: all 0.4s ease;
             animation: slideUp 0.6s ease;
             animation-fill-mode: both;
+        }
+
+        .rule-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .punishments-card {
+            background: rgba(139, 0, 0, 0.3);
+            border: 2px solid rgba(255, 100, 100, 0.4);
+        }
+
+        .punishments-text {
+            font-size: 1.5em !important;
+            text-align: center;
+            letter-spacing: 2px;
         }
 
         .rule-card:nth-child(1) { animation-delay: 0.1s; }
@@ -399,41 +451,102 @@
 
         <!-- ABA REGRAS -->
         <div id="regras" class="tab-content active">
+            <div class="rules-header">
+                <h2>📜 REGRAS DO SERVIDOR</h2>
+                <p class="rules-warning">Leia com atenção. O descumprimento pode gerar punições.</p>
+            </div>
+
             <div class="rules-grid">
                 <div class="rule-card">
                     <div class="rule-number">01</div>
-                    <div class="rule-text">🤝 Respeite todos os membros</div>
+                    <div class="rule-title">**Respeito sempre**</div>
+                    <div class="rule-text">
+                        • Seja educado com todos os membros.<br>
+                        • Ofensas, desrespeito ou preconceito **não serão tolerados**.
+                    </div>
                 </div>
 
                 <div class="rule-card">
                     <div class="rule-number">02</div>
-                    <div class="rule-text">🚫 Sem conteúdo ilegal ou NSFW</div>
+                    <div class="rule-title">**Divulgação correta**</div>
+                    <div class="rule-text">
+                        • Divulgue apenas nos canais permitidos.<br>
+                        • Fora do local correto = punição.
+                    </div>
                 </div>
 
                 <div class="rule-card">
                     <div class="rule-number">03</div>
-                    <div class="rule-text">📍 Use os canais corretamente</div>
+                    <div class="rule-title">**Proibido spam ou flood**</div>
+                    <div class="rule-text">
+                        • Mensagens repetidas, links excessivos ou marcações sem motivo são proibidas.
+                    </div>
                 </div>
 
                 <div class="rule-card">
                     <div class="rule-number">04</div>
-                    <div class="rule-text">⛔ Evite spam ou menções</div>
+                    <div class="rule-title">**Conteúdos não permitidos**</div>
+                    <div class="rule-text">
+                        • Golpes ou esquemas<br>
+                        • Conteúdo ilegal<br>
+                        • Conteúdo adulto explícito ou impróprio<br>
+                        • Vendas enganosas
+                    </div>
                 </div>
 
                 <div class="rule-card">
                     <div class="rule-number">05</div>
-                    <div class="rule-text">👮 Siga a equipe e moderadores</div>
+                    <div class="rule-title">**Nada de DM sem permissão**</div>
+                    <div class="rule-text">
+                        • Não chame membros no privado para divulgar ou vender.
+                    </div>
                 </div>
 
                 <div class="rule-card">
                     <div class="rule-number">06</div>
-                    <div class="rule-text">🕊️ Evite discussões de conflito</div>
+                    <div class="rule-title">**Suporte**</div>
+                    <div class="rule-text">
+                        • Use os canais corretos para dúvidas ou problemas.<br>
+                        • Não marque a staff sem necessidade.
+                    </div>
                 </div>
 
                 <div class="rule-card">
                     <div class="rule-number">07</div>
-                    <div class="rule-text">💫 Mantenha o ambiente cordial</div>
+                    <div class="rule-title">**Decisão da staff**</div>
+                    <div class="rule-text">
+                        • As decisões da staff são finais.<br>
+                        • Discussões públicas sobre punições não são permitidas.
+                    </div>
                 </div>
+
+                <div class="rule-card">
+                    <div class="rule-number">08</div>
+                    <div class="rule-title">**Links suspeitos**</div>
+                    <div class="rule-text">
+                        • Links encurtados ou sem explicação podem gerar punição.
+                    </div>
+                </div>
+
+                <div class="rule-card">
+                    <div class="rule-number">09</div>
+                    <div class="rule-title">**Nicks e fotos**</div>
+                    <div class="rule-text">
+                        • Nomes ou fotos ofensivos ou que imitem a staff são proibidos.
+                    </div>
+                </div>
+
+                <div class="rule-card punishments-card">
+                    <div class="rule-number">10</div>
+                    <div class="rule-title">**Punições**</div>
+                    <div class="rule-text punishments-text">
+                        ⚠️ Aviso | ⏱️ Mute | 🚫 Ban
+                    </div>
+                </div>
+            </div>
+
+            <div class="rules-footer">
+                <p>Ao entrar no servidor, você concorda com todas as regras acima.</p>
             </div>
         </div>
 
@@ -502,29 +615,4 @@
             const particlesContainer = document.getElementById('particles');
             const particleCount = 50;
 
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 10 + 's';
-                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        createParticles();
-
-        // Efeito de scroll suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
-</body>
-  </html>
-  
+            for
